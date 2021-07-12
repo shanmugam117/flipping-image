@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+  
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+      
+        
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        
+        font-size: 14px;
+        color: #000;
+        margin: 25px;
+        
+        padding: 0;
+      }
+  /*---h---*/
+      
+      .flip-box {
+  background-color: transparent;
+  
+  width:  300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:16px;
+  background-color: #bbb;
+  color: black;
+}
+.swiper-wrapper{
+  margin-top: 200px;
+  margin-left: 40px;
+  padding: 1px 1px 1px 1px;
+}
+.swiper-pagination{
+  position: relative;
+  align-content: center;
+}
+.flip-box-back {
+  background-image:
+    linear-gradient(to bottom, rgba(41, 42, 49, 0.52), rgba(26, 22, 25, 0.73)),
+    url('image.jpg');
+    
+    background-size: cover;
+    
+   
+  background-size: cover;
+  background-color: #555;
+  font-family: 'Josefin Sans', sans-serif;
+  
+  word-spacing: 2px;
+  color: #FDC11F;
+  font-size:16px;
+  text-align: left;
+  margin-left: 2px;
+  padding-left: 11px;
+  padding-right: 5px;
+  transform: rotateY(180deg);
+}
+.centered {
+  color: #FDC11F;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.center{
+  color: #FDC11F;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+.swiper-button-next, .swiper-button-prev{
+  margin-top: 100px;
+ 
+  
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt="BHAVIKA.B" style="width:300px;height:400px">
+              <div class="centered">- BHAVIKA.B<BR> HR INTERN</div>
+            </div>
+            <div class="flip-box-back">
+              
+              <p>"My work experience as Human Resource Intern has taught me so much, from learning, to discussing how various activities are managed. While working with the Human Resource department I have been inspired by the buzz and true enthusiasm employees have towards the organization’s development.It has given me anoutlook into the working world. Labdox is definitely providing the 
+                best learning culture and immense support to all the interns. It has definitely helped me enhance my skills and knowledge. It has been an immense pleasure to be a part of Labdox Family."</p>
+                  <div class="authorname">-Bhavika</div>
+                <div>HR INTERN</div>
+            </div>
+ 
+          </div>
+        </div></div>
+        <!-- new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt="Rutuja Nandkumar Taralkar" style="width:300px;height:400px">
+              <div class="center">- Rutuja Nandkumar Taralkar <BR> GD INTERN</div>
+            </div>
+            <div class="flip-box-back">
+          
+              <p>"My internship at LABDOX has given me the opportunity to see so much more about the Graphic Designing field than I am able to learn in the classroom. I have developed many skills and have a much greater concept of what to expect after course.One of the greatest benefits that I have received is the knowledge that I actually enjoy doing what it is I have been studying for."</p>
+                <div class="authorname">-Rutuja Nandkumar Taralkar</div>
+                <div>GD INTERN</div>
+            </div>
+          </div>
+        </div></div>
+        <!--new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt="Saloni khandelwal" style="width:300px;height:400px">
+              <div class="centered">- Saloni khandelwal  <BR> WD INTERN</div>
+            </div>
+            <div class="flip-box-back">
+              
+              <p>"I am working at labdox as a web developer intern .Working with Labdox has been a good learning experience  The team members in the company are very supportive and understanding .Labdox is a great learning platform for beignners I am very happy to connect with them."</p>
+              <div class="authorname">-Saloni khadelwal</div>
+                <div>GD INTERN</div>
+            </div>
+          </div>
+          
+        </div></div>
+        <!--new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <<img src="image.jpg" alt="RITIKA RAWLANI" style="width:300px;height:400px">
+              <div class="centered">- RITIKA RAWLANI<BR> HR INTERN</div>
+            </div>
+            <div class="flip-box-back">
+              
+              <p>"Working at Labdox as an HR Intern was one really good experience a student can have.  It helped me explore so much about an HR. Internship at Labdox as HR is a great way to learn and expand your knowledge. The internship included many responsibilities necessary to run a business. Each day brought different circumstances and I had the opportunity to make decisions on my own and learn from both my successes and failures. The internshipwas a worthwhile experience and I feel that it has prepared me well for my professional career. I will take both the positive and negative aspects of the internship with me in applying for and analyzing future opportunities. I amhappy to be a part of this organization."</p>
+              <div class="authorname">-Ritika Rawlani</div>
+              <div>HR INTERN</div>
+            </div>
+          </div>
+        </div></div>
+        <!--new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt="Priyadarshini Patnaik" style="width:300px;height:400px">
+              <div class="center">- Priyadarshini Patnaik<BR> HR INTERN</div>
+            </div>
+            <div class="flip-box-back">
+              
+              <p>"The 3 months journey at Labdox plays a very vital role in my professional as well as personal life as it was my first ever internship in my favourite domain, i.e., human resources. Professionally, these 3 months gave me practical corporate exposure and knowledge about the specialization I want to pursue further."</p>
+              <div class="authorname">-Priyadarshini Patnaik</div>
+              <div>HR INTERN</div>
+            </div>
+          </div>
+        </div></div>
+        <!--new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt="MANAV NAGPAL" style="width:300px;height:400px">
+              <div class="center">- MANAV NAGPAL<BR> Digital Marketing Intern</div>
+            </div>
+            <div class="flip-box-back">
+              <p>"Working at Labdox as a Digital Marketing Intern I have Been able to get practical exposure in digital marketing and it has immensely helped me to put my theoritical knowledge into practical use.<br>Labdox is helping engineers entreneurd and technology enthusiasts to enhance their skills and I am happy to be a part of this organization."</p>
+              <div class="authorname">-Manav Nagpal</div>
+              <div>Digital Marketing Intern</div>
+            </div>
+          </div>
+        </div></div>
+        <!--new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt=" " style="width:300px;height:400px">
+            </div>
+            <div class="flip-box-back">
+              <h2>Paris</h2>
+              <p> </p>
+            </div>
+          </div>
+        </div></div>
+        <!--new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt=" " style="width:300px;height:400px">
+            </div>
+            <div class="flip-box-back">
+              <h2>Paris</h2>
+              <p> </p>
+            </div>
+          </div>
+        </div></div>
+        <!--new slide-->
+        <div class="swiper-slide"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="image.jpg" alt=" " style="width:300px;height:400px">
+            </div>
+            <div class="flip-box-back">
+              <h2>Paris</h2>
+              <p> </p>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
